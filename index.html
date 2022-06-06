@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js" defer></script>
 
-  <title>Clock App</title>
+    <title>Clock App</title>
 </head>
+
 <body>
-  <div id="main_content">
-    <p id="currently">, it's currently</p>
-
-    <p id="in">in</p>
-
-    <button id="more">More</button>
-    <button id="less">Less</button>
-  </div>
-  <div id="info_content">
-    <p id="current_timezone">Current timezone</p>
-    <p id="day_of_the_year">Day of the year</p>
-    <p id="day_of_the_week">Day of the week</p>
-    <p id="week_number">Week number</p>
-  </div>
+    <div id="main_content">
+        <div id="quote">
+            <p id="quote_citation"></p>
+            <p id="quote_author"></p>
+        </div>
+        <div id="good">
+            <div id="good_sentence"><span id="good_day"></span>
+                <p id="currently">, it's currently</p>
+            </div>
+            <div id="hour"><span id="currently_hour"></span><span id="abbreviation"></span></div>
+            <div id="place">
+                <p id="in">in</p>
+                <p id="city"></p>
+                <p id="country"></p>
+            </div>
+        </div>
+        <button id="more">More</button>
+    </div>
+    <div id="info_content">
+        <div id="info_content_1">
+            <p id="current_timezone">Current timezone</p><span id="current_timezone_span"></span></div>
+        <div id="info_content_2">
+            <p id="day_of_the_year">Day of the year</p><span id="day_of_the_year_span"></span>
+        </div>
+        <div id="info_content_3">
+            <p id="day_of_the_week">Day of the week</p><span id="day_of_the_week_span"></span>
+        </div>
+        <div id="info_content_4">
+            <p id="week_number_span">Week number</p><span id="current_timezone_span"></span>
+        </div>
+    </div>
 </body>
+
 </html>
