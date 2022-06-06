@@ -44,10 +44,14 @@ p {
     font-family: "inter_bold";
 }
 
-#quote_refresh {
+button {
     appearance: none;
     border: none;
     background: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 #refresh_icon {
@@ -58,10 +62,6 @@ p {
 
 #refresh_icon:hover {
     opacity: 1;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 #good {
@@ -120,4 +120,39 @@ button:hover {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 4.8px;
+}
+
+#good_button {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#more {
+    width: 9.125rem;
+    height: 3.5rem;
+    background: #FFFFFF;
+    border-radius: 28px;
+    color: #7f7f7f;
+    font-family: "inter_bold";
+    font-size: 1rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8125rem;
+}
+
+#more>svg {
+    transform: rotate(180deg);
+}
+
+#more>svg>g {
+    fill: #303030;
+}
+
+#more:hover>svg>g {
+    fill: #999999
 }
