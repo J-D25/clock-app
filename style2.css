@@ -16,6 +16,8 @@
 body {
     margin: 0;
     background-image: url(assets/desktop/bg-image-daytime.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 p,
