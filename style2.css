@@ -18,7 +18,8 @@ body {
     background-image: url(assets/desktop/bg-image-daytime.jpg);
 }
 
-p, span{
+p,
+span {
     font-family: "inter_regular";
 }
 
@@ -26,5 +27,33 @@ p, span{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    color:white;
+    color: white;
+}
+
+#quote {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#quote_author {
+    font-family: "inter_bold";
+}
+
+#quote_refresh {
+    appearance: none;
+    border: none;
+    background: none;
+}
+
+#refresh_icon {
+    fill: #FFF;
+    fill-rule: nonzero;
+    opacity: .5;
+}
+
+#refresh_icon:hover {
+    opacity: 1;
+}
+
+button:hover {
+    cursor: pointer;
 }
