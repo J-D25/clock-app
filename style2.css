@@ -32,6 +32,8 @@ span {
 
 #quote {
     grid-area: 1 / 1 / 2 / 2;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 }
 
 #quote_author {
