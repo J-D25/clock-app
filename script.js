@@ -23,6 +23,15 @@ fetch("http://worldtimeapi.org/api/ip").then((response) => response.json().then(
     good = 'evening';
  }
 
+ //sun and moon icon
+ let icon = document.getElementById('good_icon');
+ if (hours >= 5 && hours <= 17 ) {
+    icon.classList.add('sun');
+    icon.setAttribute("alt", "sun icon");
+} else {
+    icon.classList.add('moon');
+    icon.setAttribute("alt", "moon icon");
+}
 ///////// Insertion auto si les élements SPAN avec les ID existent dans le HTML
     document.getElementById('current_timezone_span').textContent = data.timezone;
     document.getElementById('day_of_the_year_span').textContent = data.day_of_year;
