@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "inter_bold";
+    src: url(font_family/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "inter_regular";
+    src: url(font_family/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "inter_light";
+    src: url(font_family/static/Inter-Light.ttf);
+}
+
+body {
+    margin: 0;
+    background-image: url(assets/desktop/bg-image-daytime.jpg);
+}
+
+p, span{
+    font-family: "inter_regular";
+}
+
+#main_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    color:white;
+}
